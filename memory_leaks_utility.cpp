@@ -133,6 +133,8 @@ extern "C" void * _MLU_Calloc( size_t Count, size_t Size, const char *File, int 
     return NULL;
 
   memset(Ptr, 0, sizeof(NewSize));
+
+  return Ptr;
 }
 
 // MLU free function.

@@ -68,7 +68,7 @@ void * _MLU_Realloc( void *OldPtr, size_t NewSize, const char *File, int Line );
 
 #else // _MSC_VER && _DEBUG
 
-#define _MLU_EnableUtility ((void)(0))
+#define _MLU_EnableUtility() ((void)(0))
 #define _MLU_Malloc(s, f, l) malloc(s)
 #define _MLU_Calloc(c, s, f, l) calloc(c, s)
 #define _MLU_Free(p) free(p)
